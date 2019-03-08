@@ -106,7 +106,7 @@ class Api {
 	 * @return array
 	 * @throws \Exception
 	 */
-	private function http_call($path, $method, $parameters = array()) {
+	public function http_call($path, $method, $parameters = array()) {
 		if (!$this->vendor_id || !$this->vendor_auth_code) {
 			throw new \Exception(self::ERR_204, 204);
 		}
